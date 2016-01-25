@@ -16,12 +16,6 @@ namespace MVCStudy.Models
         [Display(Name = "用户名")]
         public string UserName { get; set; }
 
-        /// <summary>
-        /// 用户组ID
-        /// </summary>
-        [Required(ErrorMessage = "必填")]
-        [Display(Name = "用户组ID")]
-        public int GroupID { get; set; }
 
         /// <summary>
         /// 显示名
@@ -67,7 +61,5 @@ namespace MVCStudy.Models
         /// 上次登陆IP
         /// </summary>
         public DateTime LoginIP { get; set; }
-
-        public virtual UserGroup Group { get; set; }
     }
 }

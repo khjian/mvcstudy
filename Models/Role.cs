@@ -2,10 +2,10 @@
 
 namespace MVCStudy.Models
 {
-    public class UserGroup
+    public class Role
     {
         [Key]
-        public int GroupID { get; set; }
+        public int RoleID { get; set; }
 
         /// <summary>
         /// 名称
@@ -16,12 +16,12 @@ namespace MVCStudy.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// 用户组类型<br />
-        /// 0普通类型（普通注册用户），1特权类型（像VIP之类的类型），3管理类型（管理权限的类型）
+        /// 角色类型<br />
+        /// 0普通（普通注册用户），1特权（像VIP之类的类型），3管理（管理权限的类型）
         /// </summary>
         [Required(ErrorMessage = "必填")]
         [Display(Name = "用户组类型")]
-        public int GroupType { get; set; }
+        public int Type { get; set; }
 
         /// <summary>
         /// 说明
@@ -30,5 +30,24 @@ namespace MVCStudy.Models
         [StringLength(50, ErrorMessage = "少于{0}个字")]
         [Display(Name = "说明")]
         public string Description { get; set; }
+
+        /// <summary>
+        /// 获取角色类型名称
+        /// </summary>
+        /// <returns></returns>
+        public string TypeToString()
+        {
+            switch (Type)
+            {
+                case 0:
+                    return "普通";
+                case 1:
+                    return "特权";
+                case 2:
+                    return "管理";
+                default:
+                    return "未知";
+            }
+        }
     }
 }
