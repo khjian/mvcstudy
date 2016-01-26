@@ -55,11 +55,11 @@ namespace MVCStudy.Models
         /// <summary>
         /// 上次登陆时间
         /// </summary>
-        public DateTime LoginTime { get; set; }
+        public DateTime? LoginTime { get; set; }
 
         /// <summary>
         /// 上次登陆IP
         /// </summary>
-        public DateTime LoginIP { get; set; }
+        public string LoginIP { get; set; }
     }
 }
