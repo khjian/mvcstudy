@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InterfaceBaseRepository.cs" />
+    <Compile Include="InterfaceCommonModelRepository.cs" />
     <Compile Include="InterfaceUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
