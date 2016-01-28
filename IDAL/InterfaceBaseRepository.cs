@@ -7,6 +7,11 @@ namespace MVCStudy.IDAL
     public interface InterfaceBaseRepository<T>
     {
         /// <summary>
+        /// 数据实体列表
+        /// </summary>
+        IQueryable<T> Entities { get; }
+
+        /// <summary>
         /// 添加
         /// </summary>
         /// <param name="entity">数据实体</param>

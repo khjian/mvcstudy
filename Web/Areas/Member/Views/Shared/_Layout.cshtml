@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - 用户中心</title>
+    <style>
+        html{overflow-x:hidden;}
+    </style>
+    @Styles.Render("~/Areas/Member/Content/member.css", "~/Areas/Member/Content/easyui.css", "~/Areas/Member/Content/icon.css", "~/Areas/Member/Content/bootstrap.css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

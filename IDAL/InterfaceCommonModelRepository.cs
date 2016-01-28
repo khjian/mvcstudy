@@ -1,6 +1,6 @@
 ﻿namespace MVCStudy.IDAL
 {
-    interface InterfaceCommonModelRepository/*:InterfaceBaseRepository<Models.CommonModel>*/
+    public interface InterfaceCommonModelRepository : InterfaceBaseRepository<Models.CommonModel>
     {
 
     }

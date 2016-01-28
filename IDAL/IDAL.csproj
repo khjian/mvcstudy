@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceArticleRepository.cs" />
+    <Compile Include="InterfaceAttachmentRepository.cs" />
     <Compile Include="InterfaceBaseRepository.cs" />
+    <Compile Include="InterfaceCategoryRepository.cs" />
+    <Compile Include="InterfaceCommentRepository.cs" />
     <Compile Include="InterfaceCommonModelRepository.cs" />
     <Compile Include="InterfaceUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

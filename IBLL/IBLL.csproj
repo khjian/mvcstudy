@@ -40,7 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceArticleService.cs" />
+    <Compile Include="InterfaceAttachmentService.cs" />
     <Compile Include="InterfaceBaseService.cs" />
+    <Compile Include="InterfaceCategoryService.cs" />
+    <Compile Include="InterfaceCommentService.cs" />
+    <Compile Include="InterfaceCommonModelService.cs" />
     <Compile Include="InterfaceUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
