@@ -201,7 +201,9 @@
     <Compile Include="Areas\Member\Controllers\HomeController.cs" />
     <Compile Include="Areas\Member\Controllers\UserController.cs" />
     <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
+    <Compile Include="Areas\Member\Models\AttachmentManagerViewModel.cs" />
     <Compile Include="Areas\Member\Models\ChangePasswordViewModel.cs" />
+    <Compile Include="Areas\Member\Models\CommonModelViewModel.cs" />
     <Compile Include="Areas\Member\Models\LoginViewModel.cs" />
     <Compile Include="Areas\Member\Models\RegisterViewModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -211,6 +213,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CommonModelViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -297,7 +300,12 @@
     <Content Include="Areas\Member\Content\images\Thumbs.db" />
     <Content Include="Areas\Member\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Member\Views\Home\Menu.cshtml" />
+    <Content Include="Areas\Member\Views\Article\Menu.cshtml" />
+    <Content Include="Config\upload.config" />
+    <Content Include="Areas\Member\Views\Article\List.cshtml" />
+    <Content Include="Areas\Member\Views\Article\AddSuccess.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

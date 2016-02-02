@@ -15,5 +15,15 @@ namespace MVCStudy.Web.Areas.Member.Controllers
         {
             categoryRepository = new CategoryService();
         }
+
+        /// <summary>
+        /// 获取json格式栏目树
+        /// </summary>
+        /// <param name="model">模型名</param>
+        /// <returns></returns>
+        public ActionResult JsonTree(string model)
+        {
+            return Json(categoryRepository.EasyuiTreeData(model), JsonRequestBehavior.AllowGet);
+        }
     }
 }

@@ -4,8 +4,41 @@
         //编辑框
         KindEditor.ready(function (K) {
             window.editor = K.create('#Content', {
-                height: '500px'
-         });
+                height: '500px',
+                uploadJson: '@Url.Action("Upload", "Attachment")',
+                fileManagerJson: '@Url.Action("FileManagerJson", "Attachment")',
+                allowFileManager: true,
+                formatUploadUrl: false
+            });
+            //首页图片
+            var editor2 = K.editor({
+                fileManagerJson: '@Url.Action("FileManagerJson", "Attachment")'
+            });
+            K('#btn_picselect').click(function () {
+                editor2.loadPlugin('filemanager', function () {
+                    editor2.plugin.filemanagerDialog({
+                        viewType: 'VIEW',
+                        dirName: 'image',
+                        clickFn: function (url, title) {
+                            var url;
+                            $.ajax({
+                                type: "post",
+                                url: "@Url.Action("CreateThumbnail", "Attachment")",
+                                data: { originalPicture: url },
+                                async: false,
+                                success: function (data) {
+                                    if (data == null) alert("生成缩略图失败！");
+                                    else {
+                                        K('#CommonModel_DefaultPicUrl').val(data);
+                                        K('#imgpreview').attr("src", data);
+                                    }
+                                    editor2.hideDialog();
+                                }
+                            });
+                        }
+                    });
+                });
+            });
         });
     </script>
 }

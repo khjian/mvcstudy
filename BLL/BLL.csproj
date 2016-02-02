@@ -46,6 +46,7 @@
     <Compile Include="ArticleService.cs" />
     <Compile Include="AttachmentService.cs" />
     <Compile Include="BaseService.cs" />
+    <Compile Include="BllDataSettings.cs" />
     <Compile Include="CategoryService.cs" />
     <Compile Include="CommonModelService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

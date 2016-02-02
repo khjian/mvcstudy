@@ -16,7 +16,7 @@ namespace MVCStudy.BLL
     {
         public AttachmentService() : base(RepositoryFactory.AttachmentRepository) { }
 
-        public IQueryable<Models.Attachment> FindList(Nullable<int> modelID, string owner, string type)
+        public IQueryable<Models.Attachment> FindList(int? modelID, string owner, string type)
         {
             var _attachemts = CurrentRepository.Entities.Where(a => a.ModelID == modelID);
             if (!string.IsNullOrEmpty(owner)) _attachemts = _attachemts.Where(a => a.Owner == owner);

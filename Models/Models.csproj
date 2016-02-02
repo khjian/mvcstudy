@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +55,10 @@
     <Compile Include="Category.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="CommonModel.cs" />
+    <Compile Include="Config\KeyValueElement.cs" />
+    <Compile Include="Config\KeyValueElementCollection.cs" />
+    <Compile Include="Config\UploadConfig.cs" />
+    <Compile Include="EasyuiTreeNodeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserConfig.cs" />
